@@ -7,12 +7,6 @@ def nyc_pigeon_organizer(data)
     value.each do |value2, names|
       names.each do |name|
         
-        data.uniq! 
-        new_hash[name] = {}
-        
-        new_hash[name][key].uniq
-        new_hash[name][key] = key
-=begin
         if !new_hash[name] 
           new_hash[name] = {}
         end
@@ -20,7 +14,7 @@ def nyc_pigeon_organizer(data)
         if !new_hash[name][key]
           new_hash[name][key] = []
         end 
-=end
+        
         new_hash[name][key] << value2.to_s
       end
     end
