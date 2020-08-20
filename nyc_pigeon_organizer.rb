@@ -8,4 +8,10 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         
         data.uniq 
+        new_hash[name] = {}
+        new_hash[name][key] = []
+      end
+      new_hash[name][key] << new_value.to_s 
+    end
+  end
 end
