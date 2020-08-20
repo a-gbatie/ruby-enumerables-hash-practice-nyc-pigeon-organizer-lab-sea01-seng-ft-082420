@@ -7,9 +7,13 @@ def nyc_pigeon_organizer(data)
     value.each do |value2, names|
       names.each do |name|
         
-        nyc_pigeon_organizer.uniq 
+        if !new_hash[name] 
         new_hash[name] = {}
+        end
+        
+        if !new_hash[name][key]
         new_hash[name][key] = []
+        end
       end
       new_hash[name][key] << new_value.to_s 
     end
