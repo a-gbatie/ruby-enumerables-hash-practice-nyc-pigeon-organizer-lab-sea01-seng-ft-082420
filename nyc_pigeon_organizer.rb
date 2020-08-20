@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         new_hash[name][key] = []
         end
       end
-      new_hash[name][key] << new_value.to_s 
+      new_hash[name][key] << value2.to_s 
     end
   end
   new_hash
